@@ -12,7 +12,6 @@ function dn_links() {
     $posts = get_posts([
         'numberposts' => 3,
         'post_status' => 'publish',
-        'orderby' => 'rand',
         'author' => $author_id
     ]);
 
@@ -28,7 +27,7 @@ function dn_links() {
         </a>';
     }
 
-$dn = '<div class="dn-container">
+$dn = '<div class="dn-container" id="dn-link">
     <div class="dn-col">
         '. $avatar .'
     </div>
@@ -41,7 +40,7 @@ $dn = '<div class="dn-container">
         </p>
     </div>
 
-    <div class="dn-hover">
+    <div id="dn-hover" class="hidden">
         <div class="dn-container dn-hover-container">
             <div class="dn-col">
                 '. $avatar .'
