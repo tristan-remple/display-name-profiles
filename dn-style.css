@@ -1,0 +1,93 @@
+.dn-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1rem;
+    width: 20%;
+    position: relative;
+    padding: 0.5rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.dn-hover-container {
+    width: 100%;
+    margin: 0;
+}
+
+.dn-col {
+    max-width: 80%;
+}
+
+.dn-icon {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin-right: 0.5rem;
+}
+
+.dn-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.dn-user {
+    margin: 0;
+}
+
+.dn-hover {
+    font-size:large;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #CCC;
+    border-radius: 0.25rem;
+}
+
+.dn-features {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.dn-feat {
+    width: 30%;
+    height: 2.5rem;
+}
+
+.dn-featimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.dn-button {
+    box-sizing: border-box;
+    border: 1px solid #CCC;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    width: 100%;
+    text-align: center;
+    border-radius: 0.25rem;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .dn-container {
+        width: 90%;
+    }
+}
