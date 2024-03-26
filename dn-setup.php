@@ -21,3 +21,11 @@ function dn_deactivate() {
     remove_shortcode('dn');
 }
 register_deactivation_hook( __FILE__, 'dn_deactivate' );
+
+include("dn-links.php");
+
+function dn_enqueue() {
+    wp_enqueue_style('my_style', '/wp-content/plugins/display-name-profiles/dn-style.css');
+}
+
+add_action('wp_enqueue_scripts', 'dn_enqueue');
