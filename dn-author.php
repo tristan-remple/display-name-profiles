@@ -1,4 +1,7 @@
-<?php get_header(); 
+<?php 
+// file no longer being used, moved to ../../themes/photos/author.php
+
+get_header(); 
 
 $author_id = $_GET['author'];
 $avatar = get_avatar($author_id, 200, '', '', array('class' => 'dn-big-icon'));
