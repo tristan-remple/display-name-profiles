@@ -30,6 +30,7 @@ function dn_enqueue() {
 add_action('wp_enqueue_scripts', 'dn_enqueue');
 
 include("dn-links.php");
+include("dn-features.php");
 
 // * Enable this if you'd like the author page to be part of the plugin instead of the theme
 // function author_template($page_template) {
